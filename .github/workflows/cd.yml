@@ -54,7 +54,7 @@ jobs:
           - name: Deploy GCloud Run
             run: |
               gcloud run deploy cicd-18 \
-                --image europe-west3-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/${{ vars.GCP_ARTIFACT_REGISTRY }}/{FLUTTER_APP_NAME}:v$VERSION \
+                --image europe-west3-docker.pkg.dev/${{ vars.GCP_PROJECT_ID }}/${{ vars.GCP_ARTIFACT_REGISTRY }}/workshop:v1 \
                 --region us-central1 \
 
           - name: This will be your CD ⚙️
