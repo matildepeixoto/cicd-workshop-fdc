@@ -21,7 +21,7 @@ jobs:
               channel: 'stable'
 
           - name: lint
-            run: data format --output=none --set-exit-if-changed .
+            run: dart format --output=none --set-exit-if-changed .
 
           - name: build
             run: flutter analyze
